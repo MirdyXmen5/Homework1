@@ -1,0 +1,22 @@
+.top {
+    background-color: #ecc267;
+    height: 60px;
+}
+
+.lint_to_sections {
+    color: black;
+}
+
+.quote {
+    background-color: #ffeac2;
+}
+
+.bottom {
+    background-color: #9274ff;
+    color: #ffffff;
+    height: 300px;
+}
+
+a {
+    color: #ffffff;
+}
