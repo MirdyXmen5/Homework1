@@ -1,0 +1,32 @@
+.blocks-holder {
+    background-color: #d9e5f1;
+    height: 450px;
+    width: auto;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border: 2px solid #000000;
+    padding: 8px;
+    overflow: auto;
+}
+.blocks-holder-flex {
+    display: flex;
+}
+.block {
+    background-color: #efbf73;
+    width: 249px;
+    height: 188px;
+    overflow: hidden;
+    border-radius: 10%;
+    -webkit-box-shadow: inset 0px 0px 30px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 30px -10px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 30px -10px rgba(0,0,0,0.75);
+    padding: 0;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.text {
+    margin: 40px 25px 25px;
+}
+
+
