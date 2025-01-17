@@ -8,25 +8,21 @@
     padding: 8px;
     overflow: auto;
 }
-.blocks-holder-flex {
-    display: flex;
-}
+
 .block {
     background-color: #efbf73;
-    width: 249px;
-    height: 188px;
+    width: 200px;
+    /* height: 188px; */
     overflow: hidden;
     border-radius: 10%;
-    -webkit-box-shadow: inset 0px 0px 30px -10px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 0px 0px 30px -10px rgba(0,0,0,0.75);
-    box-shadow: inset 0px 0px 30px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: inset 0px 0px 30px -10px #000000bf;
+    -moz-box-shadow: inset 0px 0px 30px -10px #000000bf;
+    box-shadow: inset 0px 0px 30px -10px #000000bf;
     padding: 0;
-    margin-right: 15px;
-    margin-bottom: 15px;
-}
-
-.text {
-    margin: 40px 25px 25px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 20px;
 }
 
 
