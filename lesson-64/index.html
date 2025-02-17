@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>БЭМ</title>
+</head>
+<body>
+    <Header class="header">
+        <!-- Контейнер существует в дригих секциях макета, по этому добавил -->
+        <div class="container">
+            <div class="header__logo">Logo</div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <!-- HOME -->
+                        <a href="#" class="nav__link">Home</a>
+                        <ul class="nav__sublist">
+                            <li class="nav__subitem"><a href="#" class="nav__sublink">Home page</a></li>
+                            <li class="nav__subitem"><a href="#" class="nav__sublink">Landing page</a></li>
+                            <li class="nav__subitem"><a href="#" class="nav__sublink">Home banner page</a></li>
+                        </ul>
+                    </li>
+                        <!-- ABOUT -->
+                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                        <!-- SERVICES -->
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Services</a>
+                        <ul class="nav__sublist">
+                            <li class="nav__subitem"><a href="#" class="nav__sublink">Home security</a></li>
+                            <li class="nav__subitem"><a href="#" class="nav__sublink">Software Development</a></li>
+                            <li class="nav__subitem"><a href="#" class="nav__sublink">Installation CCTV</a></li>
+                            <li class="nav__subitem"><a href="#" class="nav__sublink">Service Details</a></li>
+                        </ul>
+                    </li>
+                        <!-- PAGES -->
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Pages</a>
+                        <ul class="nav__sublist">
+                            <li class="nav__subitem"><a href="#" class="nav__sublink">Pricing Plan</a></li>
+                            <li class="nav__subitem"><a href="#" class="nav__sublink">Why Choose Us</a></li>
+                            <li class="nav__subitem"><a href="#" class="nav__sublink">FAQ’S</a></li>
+                            <li class="nav__subitem">
+                                <a href="#" class="nav__sublink">Portfolio
+                                    <ul class="nav__sublist">
+                                        <li class="nav__subitem"><a href="#" class="nav__sublink">Portfolio 1</a></li>
+                                        <li class="nav__subitem"><a href="#" class="nav__sublink">Portfolio 2</a></li>
+                                        <li class="nav__subitem"><a href="#" class="nav__sublink">Portfolio 3</a></li>
+                                    </ul>
+                                </a></li>
+                            <li class="nav__subitem"><a href="#" class="nav__sublink">Team</a></li>
+                            <li class="nav__subitem"><a href="#" class="nav__sublink">Testimonial</a></li>
+                        </ul>
+                    </li>
+                        <!-- NEWS -->
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">News</a>
+                        <ul class="nav__sublist">
+                            <li class="nav__subitem"><a href="#" class="nav__sublink">Blog grid</a></li>
+                            <li class="nav__subitem"><a href="#" class="nav__sublink">Blog left sidebar</a></li>
+                            <li class="nav__subitem"><a href="#" class="nav__sublink">Blog right sidebar</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Убрал лишний contact us, так как есть кнопка -->
+                <!-- в макете вроде бы все кнопки одинаковые, по этому дам всем единый класс -->
+                <a href="#" class="button">Contact Us</a>
+            </nav>
+        </div>
+    </Header>
+    <main></main>
+    <footer></footer>
+</body>
+</html>
