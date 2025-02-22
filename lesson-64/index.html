@@ -6,8 +6,8 @@
     <title>БЭМ</title>
 </head>
 <body>
-    <Header class="header">
-        <!-- Контейнер существует в дригих секциях макета, по этому добавил -->
+    <header class="header">
+        <!-- Контейнер существует в других секциях макета, поэтому добавил -->
         <div class="container">
             <div class="header__logo">Logo</div>
             <nav class="nav">
@@ -21,9 +21,9 @@
                             <li class="nav__subitem"><a href="#" class="nav__sublink">Home banner page</a></li>
                         </ul>
                     </li>
-                        <!-- ABOUT -->
+                    <!-- ABOUT -->
                     <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                        <!-- SERVICES -->
+                    <!-- SERVICES -->
                     <li class="nav__item">
                         <a href="#" class="nav__link">Services</a>
                         <ul class="nav__sublist">
@@ -33,7 +33,7 @@
                             <li class="nav__subitem"><a href="#" class="nav__sublink">Service Details</a></li>
                         </ul>
                     </li>
-                        <!-- PAGES -->
+                    <!-- PAGES -->
                     <li class="nav__item">
                         <a href="#" class="nav__link">Pages</a>
                         <ul class="nav__sublist">
@@ -52,7 +52,7 @@
                             <li class="nav__subitem"><a href="#" class="nav__sublink">Testimonial</a></li>
                         </ul>
                     </li>
-                        <!-- NEWS -->
+                    <!-- NEWS -->
                     <li class="nav__item">
                         <a href="#" class="nav__link">News</a>
                         <ul class="nav__sublist">
@@ -63,12 +63,104 @@
                     </li>
                 </ul>
                 <!-- Убрал лишний contact us, так как есть кнопка -->
-                <!-- в макете вроде бы все кнопки одинаковые, по этому дам всем единый класс -->
+                <!-- в макете вроде бы все кнопки одинаковые, поэтому дам всем единый класс -->
                 <a href="#" class="button">Contact Us</a>
             </nav>
         </div>
-    </Header>
-    <main></main>
+    </header>
+    <main>
+        <!-- Hero section -->
+        <section class="hero">
+            <div class="container">
+                <picture class="hero__picture">
+                    <source srcset="img/hero-bg.webp" type="image/webp">
+                    <img src="img/hero-bg.jpg" alt="hero">
+                </picture>
+                <div class="hero__text">
+                    <!-- Я бы поместил эту строку в лист. И просто дал бы направление -->
+                    <h2 class="hero__title">Software Development</h2>
+                    <ul class="hero__list">
+                        <li class="hero__item">Hero</li>
+                        <li class="hero__item">
+                            <!-- Иконка стрелки. Можно оказывается через тэг i создать символ. -->
+                            <picture class="hero__icon">
+                                <source srcset="img/hero-icon.webp" type="image/webp">
+                                <img src="img/hero-icon.png" alt="icon">
+                            </picture>
+                        </li>
+                        <li class="hero__item">Software Development</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- NEW TECHNOLOGY section -->
+        <section class="technology">
+            <div class="container">
+                <!-- решил разделить на блоки -->
+                <div class="technology__upper-block">
+                    <!-- первая большая картинка -->
+                    <picture class="technology__picture-1">
+                        <source srcset="img/technology-employees.webp" type="image/webp">
+                        <img src="img/technology-employees.jpg" alt="technology">
+                    </picture>
+                    <div class="technology__content">
+                        <h4 class="technology__title-1">OUR TECHNOLOGY</h4>
+                        <h1 class="technology__title-2">Top Software Development Technology</h1>
+                        <p class="technology__text">Design of choice for many of the world’s leading enterprises technology challengers. We help businesses elevate the value here is custom software development, product design tailored.</p>
+                        <div class="procents">
+                            <h4 class="procents__title">OUR VALUES & STRATEGY</h4>
+                            <span class="procents__text-75">SKILLED EMPLOYEE</span><span class="procents__text-75">75%</span>
+                            <!-- Линий процента можно создать с помощью div -->
+                            <div class="procents__line procents__line_75"></div><div class="procents__line procents__line_75"></div>
+                            <span class="procents-title__text-80">QUALITY SERVICES</span><span class="procents-title__text-80">85%</span>
+                            <div class="procents__line procents__line_80"></div><div class="procents__line procents__line_80"></div>
+                        </div>             
+                        <!-- вторая картинка, которая справа процентов -->
+                    <picture class="technology__picture-2">
+                        <source srcset="img/technology-technology.webp" type="image/webp">
+                        <img src="img/technology-technology.jpg" alt="technology">
+                    </picture>
+                    <hr class="technology-separator">
+                    <a href="#" class="button">Discover More</a>
+                    </div>
+                </div>
+                <!-- блок снизу сделал отдельным -->
+                <div class="technology__bottom-block">
+                    <div class="technology-content__item">
+                        <picture class="technology__icon">
+                            <source srcset="img/technology-icon-1.webp" type="image/webp">
+                            <img src="img/technology-icon.jpg" alt="technology">
+                        </picture>
+                        <h5 class="technology-content__number">150 +</h5>
+                        <h4 class="technology-content__title">Happy Customers</h4>
+                    </div>
+                    <div class="technology-content__item">
+                        <picture class="technology__icon">
+                            <source srcset="img/technology-icon-2.webp" type="image/webp">
+                            <img src="img/technology-icon.jpg" alt="technology">
+                        </picture>
+                        <h5 class="technology-content__number">60 +</h5>
+                        <h4 class="technology-content__title">Employer Solutions</h4>
+                    </div>
+                    <div class="technology-content__item">
+                        <picture class="technology__icon">
+                            <source srcset="img/technology-icon-3.webp" type="image/webp">
+                            <img src="img/technology-icon.jpg" alt="technology">
+                        </picture>
+                        <h5 class="technology-content__number">30 +</h5>
+                        <h4 class="technology-content__title">Client Coffee</h4>
+                    </div>
+                    <div class="technology-content__item">
+                        <picture class="technology__icon">
+                            <source srcset="img/technology-icon-4.webp" type="image/webp">
+                            <img src="img/technology-icon.jpg" alt="technology">
+                        </picture>
+                        <h5 class="technology-content__number">33 +</h5>
+                        <h4 class="technology-content__title">Project Completed</h4>
+                    </div>
+                </div>
+        </section>
+    </main>
     <footer></footer>
 </body>
 </html>
