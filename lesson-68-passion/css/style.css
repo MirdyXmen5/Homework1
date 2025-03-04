@@ -1,0 +1,35 @@
+.text {
+    background-color: rgb(193, 255, 255);
+    font-size: 3em;
+    height: 50%;
+    overflow: auto; 
+    scrollbar-width: none; 
+}
+
+
+.hero {
+    height: 50%;
+    background-color: bisque;
+    position: relative;
+}
+
+.block {
+    background-color: rgb(160, 100, 255);
+    min-height: 100px;
+    width: calc(50% - 50px);
+    border-radius: 10px;
+    position: fixed;
+    left: 50%;
+    bottom: 100px;
+    right: 50px;
+}
+
+.circle {
+    background-color: rgb(255, 100, 100);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 50px;
+    left: 80px;
+}
