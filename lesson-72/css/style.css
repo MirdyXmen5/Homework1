@@ -1,0 +1,57 @@
+body {
+    background: #233128;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+
+.block {
+    width: 200px;
+    height: 200px;
+    background: #c58244;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 10px solid #8f6014;
+    position: relative;
+}
+
+.block__load-line {
+    width: 0px;
+    height: 25px;
+    background: #ffffff;
+    position: absolute;
+    bottom: 140%;
+    left: 0%;
+    transform: translateX(-50%);
+    transition: width 1s;
+}
+
+.block:hover .block__load-line{
+    width: 500px;
+}
+
+.block__text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #8f6014;
+    font-size: larger;
+    opacity: 0;
+    transition: opacity 0.3s 1s;
+}
+
+.block:hover .block__text {
+    opacity: 1;
+}
+
+
+
+
+
