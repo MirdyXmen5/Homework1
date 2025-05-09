@@ -1,0 +1,336 @@
+/* ---------------- fonts --------------- */
+
+/* Montserrat Medium */
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+        url('../fonts/Montserrat-Medium.woff') format('woff');
+    font-weight: 500; 
+}
+
+/* Montserrat Regular */
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Montserrat-Regular.woff') format('woff');
+    font-weight: 400; 
+}
+
+/* Montserrat SemiBold */
+@font-face {
+    font-family: 'Montserrat_SemiBold';
+    src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+        url('../fonts/Montserrat-SemiBold.woff') format('woff');
+    font-weight: 600; 
+}
+
+/* ---------------------- materials ------------------------ */
+
+:root {
+    --color-primary: #0e2e4e;
+    --color-secondary: #f0f6fd;
+    --color-accent: #25282b;
+    --color-background: #fff;
+    --color-text: #000;
+}
+
+/* --------------- container --------------- */
+
+body {
+    display: flexbox;
+    justify-items: center;
+}
+
+.container {
+    width: 1200px; 
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+/* -------------- header ------------------- */
+
+.header {
+background-color: var(--color-background);
+font-family: 'Montserrat', sans-serif;
+width: 100%;
+display: flex;
+justify-content: center;
+padding: 30px 120px;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header__menu, .header__socials{
+display: flex;
+flex: 1;
+gap: 30px;
+}
+
+.menu__item {
+cursor: pointer;
+color: #25282b;
+}
+
+.header__logo {
+    width: 54px;
+    height: 48px;
+    flex-shrink: 0;
+}
+
+.header__socials {
+    display: flex;
+    gap: 30px;
+}
+
+.header_menu {
+    justify-content: flex-start;
+}
+
+.header__socials {
+    justify-content: flex-end;
+    color: #25282b;
+}
+
+
+/* ----------------------- hero ------------------------ */
+
+.hero {
+background-color: var(--color-background);
+color: #fff;
+height: 582px;
+padding: 120px auto 120px; 
+text-align: center;
+background-size: cover;
+font-family: 'Montserrat', sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+
+position: relative;
+width: 100%;
+overflow: hidden;
+}
+
+.hero__gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #102e49cc;
+}
+
+.hero__video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.hero__title {
+font-size: 36px;
+margin-bottom: 30px;
+font-size: 52px;
+line-height: 150%;
+font-family: 'Montserrat_SemiBold', sans-serif;
+}
+
+.hero__features {
+margin: 0 auto 40px;
+font-size: 24px;
+line-height: 150%;
+display: flex;
+flex-direction: column; /* Align children vertically */
+align-items: center; /* Center children horizontally */
+
+}
+
+.hero__feature-active {
+margin-bottom: 15px;
+display: inline-flex;
+justify-content: center;
+}
+
+.hero__feature-active img {
+    margin-right: 10px; /* This already exists, it adds space between the icon and the text */
+}
+
+
+.button {
+width: 288px;
+height: 56px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 16px;
+line-height: 20px;
+cursor: pointer;
+background-color: #f0f6fd;
+color: #1d6fb6;
+border-radius: 100px;
+transition: 0.5s;
+}
+
+button:hover {
+color: #fff;
+background: #83add3;
+}
+
+/* ------------------------ sidebar ------------------------- */
+
+.main {
+width: 100%;
+display: flex;
+justify-content: center;
+gap: 20px;
+padding: 20px;
+margin-top: 120px;
+}
+
+.sidebar {
+width: 282px;
+height: 1170px;
+padding: 30px 45px 841px 30px;
+border: 2px solid #d0dce7;
+font-family: Montserrat-Medium;
+}
+
+.sidebar__item {
+margin-bottom: 20px;
+}
+
+/* ------------------------- Pictures ---------------------------- */
+
+.content {
+    display: inline-block;
+    margin-left: 126px;
+}
+
+.gallery {
+    width: 792px;
+    height: 792px;
+}
+
+.gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.gallery__grid .gallery__item:first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.gallery__grid .gallery__item:last-child {
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 2;
+}
+
+.gallery__item {
+    width: 100%;
+}
+
+
+
+/* -------------------------- products ---------------------------- */
+
+.products__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 120px;
+}
+
+.product-card {
+    position: relative;
+    width: 384px;
+    height: 354px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    text-align: center;
+    border: 2px solid #d0dce7;
+    overflow: hidden;
+}
+
+.product-card__image {
+    width: 100%;
+    object-fit: cover; 
+    margin-bottom: 30px; 
+}
+
+.product-card__button {
+    width: 289px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat-Medium';
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+    background-color: #f0f6fd;
+    color: #1d6fb6;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+
+.product-card__badge {
+background: #e5eef8;
+position: absolute;
+top: 30px;     
+right: 250px;   
+font-size: 16px;
+display: flex;
+flex-direction: row;
+justify-content: left;
+align-items: center;
+padding: 18px 30px 18px 30px;
+border-radius: 0px 100px 100px 0px;
+background: #f8fcff;
+font-family: 'Montserrat-Medium';
+color: #1d6fb6;
+}
+
+
+/* --------------------------- footer -------------------------------- */
+
+.footer {
+    display: flex;
+    width: 100vw;
+    margin-left: calc(-50vw + 49.3%);
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat-Regular';
+    background: #788088;
+    color: #ccc;
+    padding: 15px;
+    margin-top: 120px;
+}
+
+.footer img {
+    margin-right: 10px;
+}
+
